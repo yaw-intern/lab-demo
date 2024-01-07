@@ -3,5 +3,5 @@ from django.views.generic import TemplateView
 from . import views
 
 urlpatterns = [
-    path("chat/", views.chat, name='chat'),
+    path("", views.dashboard, name='dashboard'),
 ]
