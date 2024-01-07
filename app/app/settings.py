@@ -89,7 +89,7 @@ CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
         "CONFIG": {
-            "hosts": [("redis://default:iHJk3d3NDmb5jEhKacCgk4eCikMJM55m@viaduct.proxy.rlwy.net:42722")],
+            "hosts": [env("REDISHOST")],
         },
     },
 }
